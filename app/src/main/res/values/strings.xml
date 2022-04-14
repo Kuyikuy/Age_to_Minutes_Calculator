@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Age_to_Minutes_Calculator</string>
+    <string name="app_name">Age to minutes calculator</string>
+    <string name="in_minutes">IN MINUTES!</string>
+    <string name="select_your_age">Select date</string>
+    <string name="calculate_your_LABEL1">CALCULATE YOUR</string>
+    <string name="age">AGE</string>
+    <string name="dateDisplay">01/01/2022</string>
+    <string name="selectDate">Selected date</string>
+    <string name="minutesCalculated">15 minutes</string>
+    <string name="minutesTillDate">In Minutes till date</string>
 </resources>

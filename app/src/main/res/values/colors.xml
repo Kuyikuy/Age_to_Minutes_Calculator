@@ -11,6 +11,10 @@
     <color name="backgroundColor">#a8dadc</color>
     <color name="textAgeBG">#f1faee</color>
     <color name="buttonBGColor">#F2FBEF</color>
+    <color name="descriptionSmall">#457b9d</color>
+    <color name="notiBarColor">#01051B</color>
+    <color name="headerColor">#C3DF3333</color>
+
 
 
 

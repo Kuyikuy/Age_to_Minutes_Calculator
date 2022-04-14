@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="CALCULATE YOUR"
+        android:text="@string/calculate_your_LABEL1"
         android:textColor="@color/textBlue"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/textAgeBG"
         android:padding="10dp"
-        android:text="AGE"
+        android:text="@string/age"
         android:textColor="@color/textBlue"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="IN MINUTES"
+        android:text="@string/in_minutes"
         android:textColor="@color/textBlue"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -49,8 +49,47 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/select_your_age"
         android:textColor="@color/textBlue"
         android:backgroundTint="@color/buttonBGColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/dateDisplay"
+        android:textColor="@color/textBlue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectDate"
+        android:textColor="@color/descriptionSmall"
+        android:textSize="20sp"
+        android:textStyle="italic"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="@string/minutesCalculated"
+        android:textColor="@color/textBlue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutesTillDate"
+        android:textColor="@color/descriptionSmall"
+        android:textSize="20sp"
+        android:textStyle="italic"
+
         />
 </LinearLayout>
