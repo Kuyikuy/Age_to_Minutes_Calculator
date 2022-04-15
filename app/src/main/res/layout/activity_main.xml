@@ -46,7 +46,7 @@
         />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/select_your_age"
@@ -55,15 +55,15 @@
         />
 
     <TextView
+        android:id="@+id/textViewSelectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/dateDisplay"
         android:textColor="@color/textBlue"
         android:textSize="25sp"
-        android:textStyle="bold"
 
-        />
+        android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,6 +74,7 @@
 
         />
     <TextView
+        android:id="@+id/minutesPassedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
