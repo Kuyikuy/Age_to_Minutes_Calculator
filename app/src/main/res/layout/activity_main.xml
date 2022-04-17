@@ -49,10 +49,9 @@
         android:id="@+id/buttonDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/select_your_age"
-        android:textColor="@color/textBlue"
         android:backgroundTint="@color/buttonBGColor"
-        />
+        android:text="@string/select_your_age"
+        android:textColor="@color/textBlue" />
 
     <TextView
         android:id="@+id/textViewSelectedDate"

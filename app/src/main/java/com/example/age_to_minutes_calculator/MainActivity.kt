@@ -31,14 +31,13 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-    fun datePicker(){
+    private fun datePicker(){
         val calendar = java.util.Calendar.getInstance()
         val year = calendar.get(java.util.Calendar.YEAR)
         val month = calendar.get(java.util.Calendar.MONTH)
         val day = calendar.get(java.util.Calendar.DAY_OF_MONTH)
-
-        DatePickerDialog(this, DatePickerDialog.OnDateSetListener
-        { view, selectedYear, selectedMonth, selectedDayOfMonth ->
+        val DPD = DatePickerDialog(this, DatePickerDialog.OnDateSetListener
+        { _, selectedYear, selectedMonth, selectedDayOfMonth ->
             Toast.makeText(this, "The year selected was $selectedYear, the month ${selectedMonth+1}" +
                     " and the day $selectedDayOfMonth", Toast.LENGTH_LONG).show()
 
@@ -48,18 +47,27 @@ class MainActivity : AppCompatActivity() {
             val simpleDateFormatVal = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
             var theDate = simpleDateFormatVal.parse(selectedDate)
 
-            val selectedDateInMinutes = theDate.time / 60000
+            theDate?.let {
+                val selectedDateInMinutes = theDate.time / 60000
 
-            val currentDate = simpleDateFormatVal.parse(simpleDateFormatVal.format(System.currentTimeMillis()))
+                val currentDate = simpleDateFormatVal.parse(simpleDateFormatVal.format(System.currentTimeMillis()))
+                currentDate?.let {
+                    val currentDateInMinutes = currentDate.time / 60000
 
-            val currentDateInMinutes = currentDate.time / 60000
+                    val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
 
-            val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
+                    minutesPassedTextView?.text = differenceInMinutes.toString()
+                }
 
-            minutesPassedTextView?.text = differenceInMinutes.toString()
+            }
+
 
         },
-        year, month, day).show()
+            year, month, day)
+
+        DPD.datePicker.maxDate = System.currentTimeMillis() - 86400000
+        DPD.show()
+
 
 
 
