@@ -4,8 +4,8 @@
     <string name="select_your_age">Select date</string>
     <string name="calculate_your_LABEL1">CALCULATE YOUR</string>
     <string name="age">AGE</string>
-    <string name="dateDisplay">01/01/2022</string>
+    <string name="dateDisplay">Enter your birth day above</string>
     <string name="selectDate">Selected date</string>
-    <string name="minutesCalculated">15 minutes</string>
-    <string name="minutesTillDate">In Minutes till date</string>
+    <string name="minutesCalculated">Date not selected yet</string>
+    <string name="minutesTillDate">In Minutes till today</string>
 </resources>
